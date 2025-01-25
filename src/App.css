@@ -1,0 +1,125 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
+  
+  .card {
+    padding: 2em;
+  }
+  
+  .read-the-docs {
+    color: #888;
+  }
+  
+  body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+     position: fixed;
+    display: flex;
+    justify-content: center;
+    min-width: 320px;
+    min-height: 100vh;
+    place-items: center;/* Soft yellow background */
+      color: #003366; /* Dark blue text */
+  }
+  
+  h1 {
+      font-size: 2.5em;
+      margin-bottom: -20px;
+  }
+  
+  h2 {
+      font-size: 2em;
+      margin: 10px 0;
+  }
+  
+  form {
+      margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+     border-top-left-radius: 5px;
+     border-bottom-left-radius: 5px;
+      width: 200px;
+      outline: none;
+  }
+  
+  button {
+      padding: 10px 15px;
+      background-color: #DDB130; /* Button color */
+      color: white;
+      border: none;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      cursor: pointer;
+  }
+  
+  button:hover {
+      background-color: hwb(45 18% 21%); /* Darker button on hover */
+  }
+  
+  p {
+      font-size: 1em;
+  }
+  
+  .error {
+      color: red; /* Error message color */
+  }
+  
+  .loading {
+      font-style: italic; /* Loading message style */
+  }
+  
+  .hero{
+    background: linear-gradient(to bottom, #47BFDF, #4A91FF);
+  padding: 24px 32px;
+  border-radius: 15px;
+  width: 100%;
+  margin: auto;
+  
+  }
+  
+  img{
+    width: 50%;;
+  }
+  
+  .blue{
+    border-image-source: radial-gradient(150.36% 227.1% at 8.75% 100%, #FFFFFF 0%, rgba(201, 201, 201, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    background: #FFFFFF1A;
+    backdrop-filter: blur(10px);
+  color:#fff;
+  padding: 8px ;
+  border-radius: 8px;
+  }

@@ -1,4 +1,5 @@
 import  { useState, useEffect } from 'react';
+import './App.css';
 
 function App() {
   const [location, setLocation] = useState('London');
@@ -36,24 +37,30 @@ function App() {
   };
 
   return (
-    <div className="App" style={{ textAlign: 'center', padding: '20px' }}>
+    <div className='hero' >
       <h1>Weather App</h1>
+      <img src='/logo.png' alt='' />
       <form onSubmit={handleSearch}>
         <input type="text" name="city" placeholder="Enter city" />
         <button type="submit">Search</button>
       </form>
+      {loading && <p className="loading">Loading...</p>}
+      {error && <p className="error">{error}</p>}
 
-      {loading && <p>Loading...</p>}
-      {error && <p style={{ color: 'red' }}>{error}</p>}
+<div className='blue'>
 
       {weatherData && (
-        <div>
+        <div >
           <h2>{weatherData.name}</h2>
           <p>Temperature: {weatherData.main.temp}°C</p>
           <p>Condition: {weatherData.weather[0].description}</p>
           <p>Humidity: {weatherData.main.humidity}%</p>
         </div>
       )}
+
+
+</div>
+     
     </div>
   );
 }
